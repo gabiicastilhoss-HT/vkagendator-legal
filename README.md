@@ -1,0 +1,1 @@
+# vkagendator-legal
