@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VKagendator — Gestão de publicações para criadores</title>
+<meta name="description" content="Ferramenta de organização, edição e agendamento de publicações em redes sociais para criadores de conteúdo.">
+<style>
+  :root { --tinta:#1b1f27; --suave:#5a6373; --linha:#e4e7ec; --azul:#2f6feb; --fundo:#f7f8fa; }
+  * { box-sizing:border-box; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.7; color:var(--tinta); background:#fff; margin:0;
+  }
+  .wrap { max-width:840px; margin:0 auto; padding:0 24px; }
+
+  header { padding:64px 0 44px; }
+  .marca { display:flex; align-items:center; gap:12px; margin-bottom:28px; }
+  .logo {
+    width:42px; height:42px; border-radius:10px; background:var(--azul);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .marca span { font-size:1.15rem; font-weight:700; letter-spacing:-.3px; }
+  h1 { font-size:2.2rem; line-height:1.25; margin:0 0 16px; letter-spacing:-.8px; }
+  .sub { font-size:1.05rem; color:var(--suave); max-width:620px; margin:0; }
+
+  section { padding:40px 0; border-top:1px solid var(--linha); }
+  h2 { font-size:1.25rem; margin:0 0 20px; letter-spacing:-.3px; }
+  p { color:var(--suave); }
+
+  .grade { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+  .item {
+    background:var(--fundo); border:1px solid var(--linha);
+    border-radius:12px; padding:20px 22px;
+  }
+  .item h3 { font-size:.98rem; margin:0 0 7px; }
+  .item p { font-size:.9rem; margin:0; }
+
+  ol { color:var(--suave); padding-left:22px; }
+  ol li { margin-bottom:10px; }
+  ol strong { color:var(--tinta); }
+
+  .nota {
+    background:var(--fundo); border:1px solid var(--linha);
+    border-radius:12px; padding:20px 22px; margin-top:8px;
+  }
+  .nota p { margin:0; font-size:.92rem; }
+
+  footer {
+    border-top:1px solid var(--linha); margin-top:20px;
+    padding:32px 0 64px; font-size:.9rem; color:var(--suave);
+  }
+  footer a { color:var(--azul); text-decoration:none; }
+  footer a:hover { text-decoration:underline; }
+  .links { display:flex; gap:22px; flex-wrap:wrap; margin-bottom:16px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="marca">
+      <div class="logo">
+        <svg width="22" height="22" viewBox="0 0 18 18" fill="none">
+          <rect x="1.5" y="4.5" width="15" height="10" rx="2" stroke="#fff" stroke-width="1.6"/>
+          <circle cx="9" cy="9.5" r="2.8" stroke="#fff" stroke-width="1.6"/>
+          <path d="M6.5 4.5l.8-1.6h3.4l.8 1.6" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span>VKagendator</span>
+    </div>
+
+    <h1>Gestão de publicações para criadores de conteúdo</h1>
+    <p class="sub">
+      Organize seus vídeos, aplique um padrão visual consistente e programe as
+      publicações nas suas contas de redes sociais — tudo a partir de um painel único.
+    </p>
+  </header>
+
+  <section>
+    <h2>O que a ferramenta faz</h2>
+    <div class="grade">
+      <div class="item">
+        <h3>Biblioteca de vídeos</h3>
+        <p>Reúne os vídeos em um só lugar, com prévia e organização por situação: disponível, agendado ou já publicado.</p>
+      </div>
+      <div class="item">
+        <h3>Padrão visual</h3>
+        <p>Modelos de edição reaproveitáveis — filtros, marca d'água e capa aplicados de forma consistente em todos os vídeos.</p>
+      </div>
+      <div class="item">
+        <h3>Agendamento recorrente</h3>
+        <p>Defina uma grade (a cada N horas, ou dias fixos da semana) e distribua os vídeos automaticamente nos horários.</p>
+      </div>
+      <div class="item">
+        <h3>Acompanhamento</h3>
+        <p>Painel com o desempenho das publicações: visualizações, alcance e interações de cada vídeo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Como funciona</h2>
+    <ol>
+      <li><strong>Conectar a conta.</strong> O usuário autoriza o acesso pela tela oficial da própria rede social. As credenciais nunca passam pela ferramenta.</li>
+      <li><strong>Preparar os vídeos.</strong> Importa os arquivos e aplica o modelo de edição escolhido.</li>
+      <li><strong>Programar.</strong> Seleciona os vídeos, define a recorrência e revisa a agenda antes de confirmar.</li>
+      <li><strong>Publicar.</strong> No horário marcado, a publicação é enviada à rede social pela API oficial da plataforma.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Privacidade e controle</h2>
+    <div class="nota">
+      <p>
+        A ferramenta é executada em servidor sob controle do próprio usuário. Os dados
+        não são vendidos, compartilhados para fins publicitários nem usados para
+        criação de perfis comportamentais. A autorização de qualquer conta conectada
+        pode ser revogada a qualquer momento, tanto pela ferramenta quanto diretamente
+        nas configurações da rede social.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="termos.html">Termos de Serviço</a>
+      <a href="privacidade.html">Política de Privacidade</a>
+      <a href="mailto:menegolvinicius@gmail.com">Contato</a>
+    </div>
+    <div>VKagendator — ferramenta de gestão de publicações para criadores de conteúdo.</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
